@@ -9,7 +9,7 @@ function Footer() {
             <p>&copy; 2023 My Portfolio</p>
           </div>
           <div className="col-md-6 text-md-end">
-            <p>Designed and Developed by Hendra </p>
+            <p>Designed and Developed by Me</p>
           </div>
         </div>
       </div>

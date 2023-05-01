@@ -1,19 +1,21 @@
 import React from "react";
-import About from "./views/About";
-import ProjectList from "./views/ProjectList";
-import NavBar from "./components/NavBar";
-import Home from "./views/Home";
-import Footer from "./components/Footer";
+import router from "./router";
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+
 const App = () => {
   return (
     
-    <div>
-      <NavBar/>
-      <Home/>
-      <About />
-      <ProjectList />
-      <Footer/>
-    </div>
+    // <div>
+    //   <NavBar/>
+    //   <Home/>
+    //   <About />
+    //   <ProjectList />
+    //   <Footer/>
+    // </div>
+    <RouterProvider router={router} />
   );
 };
 
