@@ -5,8 +5,11 @@ import { Container, Button } from 'react-bootstrap';
 const Home = () => {
 
   return (
-        <div className="bg-light py-5">
-    <Container className="py-5">
+    <Container className="py-5" style={{
+      minHeight:"100vh",
+      display:"flex",
+      flexDirection:"Column"
+    }}>
       <h className="my-5">
         <h1>Welcome to My Portfolio!</h1>
         <p>
@@ -15,16 +18,17 @@ const Home = () => {
         <p>
         Ex Accountant transitioning into passionate front end developer after completing Hacktiv8 Fullstack Javascript
         </p>
+        <p>This is My personal website </p>
         <p>
             Come here to see all my project.
         </p>
         <p>
-          <Button variant="primary" href="/projects">View My Projects</Button>
+          <Button variant="primary" href="/projects" style={{
+          marginTop:"7vh"
+        }}>View My Projects</Button>
         </p>
       </h>
     </Container>
-      </div>
-    
   )
 }
 export default Home;

@@ -7,15 +7,14 @@ import {
 
 const App = () => {
   return (
-    
-    // <div>
-    //   <NavBar/>
-    //   <Home/>
-    //   <About />
-    //   <ProjectList />
-    //   <Footer/>
-    // </div>
-    <RouterProvider router={router} />
+    <div style={{
+      backgroundImage: "url('/background3.jpg')",
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      width:"100% !important",
+    }}>
+      <RouterProvider router={router} />
+    </div>
   );
 };
 
